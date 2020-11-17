@@ -11,11 +11,38 @@
   </modules>
   <dependencyManagement>
   	<dependencies>
-  		<dependency>
-  			<groupId>org.apache.camel</groupId>
-  			<artifactId>camel-core</artifactId>
-  			<version>3.5.0sdf</version>
-  		</dependency>
+		<!-- rest client dependency -->
+		<dependency>
+			<groupId>com.cybersource</groupId>
+			<artifactId>cybersource-rest-client-java</artifactId>
+			<version>0.0.27</version>
+		</dependency>
+		<!-- Sample API Client dependency -->
+		<dependency>
+			<groupId>com.cybersource</groupId>
+			<artifactId>SampleApiClient</artifactId>
+			<version>0.0.2</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/java/samples/authentication/lib/SampleApiClient-0.0.2.jar</systemPath>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+		<dependency>
+		    <groupId>com.google.guava</groupId>
+		    <artifactId>guava</artifactId>
+		    <version>27.1-jre</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+		<dependency>
+		    <groupId>commons-io</groupId>
+		    <artifactId>commons-io</artifactId>
+		    <version>2.4</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+		<dependency>
+		    <groupId>com.fasterxml.jackson.core</groupId>
+		    <artifactId>jackson-databind</artifactId>
+		    <version>2.10.3</version>
+		</dependency>	
   	</dependencies>
   </dependencyManagement>
 </project>
