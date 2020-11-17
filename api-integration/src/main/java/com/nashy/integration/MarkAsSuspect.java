@@ -26,7 +26,7 @@ public class MarkAsSuspect {
 	}
 
 	public static RiskV1UpdatePost201Response run() {
-		String id = "6056247049426047704006";
+		String id = "6056508174866323504002";
 		FraudMarkingActionRequest requestObj = new FraudMarkingActionRequest();
 
 		Riskv1decisionsidmarkingRiskInformation riskInformation = new Riskv1decisionsidmarkingRiskInformation();

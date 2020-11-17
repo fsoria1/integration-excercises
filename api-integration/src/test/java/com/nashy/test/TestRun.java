@@ -53,7 +53,11 @@ public class TestRun {
 5.       Trigger one decision manager rejection rule, rejecting transactions using the email address assessment@reject.com.br 
 		 */
 		
+		//1. Add to fraud list
 		AddDataToList.run();
+		
+		//Decision Manager
+		DMWithBuyerInformation.run();
 	}
 
 }
