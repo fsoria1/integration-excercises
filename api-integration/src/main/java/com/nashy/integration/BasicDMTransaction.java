@@ -30,7 +30,7 @@ public class BasicDMTransaction {
 		CreateBundledDecisionManagerCaseRequest requestObj = new CreateBundledDecisionManagerCaseRequest();
 
 		Riskv1decisionsClientReferenceInformation clientReferenceInformation = new Riskv1decisionsClientReferenceInformation();
-		clientReferenceInformation.code("54323007");
+		clientReferenceInformation.code("543230071");
 		requestObj.clientReferenceInformation(clientReferenceInformation);
 
 		Riskv1decisionsPaymentInformation paymentInformation = new Riskv1decisionsPaymentInformation();

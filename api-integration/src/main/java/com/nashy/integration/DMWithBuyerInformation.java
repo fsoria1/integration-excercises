@@ -30,7 +30,7 @@ public class DMWithBuyerInformation {
 		CreateBundledDecisionManagerCaseRequest requestObj = new CreateBundledDecisionManagerCaseRequest();
 
 		Riskv1decisionsClientReferenceInformation clientReferenceInformation = new Riskv1decisionsClientReferenceInformation();
-		clientReferenceInformation.code("54323007");
+		clientReferenceInformation.code("543230073");
 		requestObj.clientReferenceInformation(clientReferenceInformation);
 
 		Riskv1decisionsPaymentInformation paymentInformation = new Riskv1decisionsPaymentInformation();
@@ -56,7 +56,7 @@ public class DMWithBuyerInformation {
 		orderInformationBillTo.firstName("James");
 		orderInformationBillTo.lastName("Smith");
 		orderInformationBillTo.phoneNumber("7606160717");
-		orderInformationBillTo.email("test@visa.com");
+		orderInformationBillTo.email("assessment@reject.com.br");
 		orderInformationBillTo.postalCode("03055");
 		orderInformation.billTo(orderInformationBillTo);
 
