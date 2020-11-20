@@ -37,7 +37,7 @@ public class DMWithBuyerInformation {
 		Riskv1decisionsPaymentInformationCard paymentInformationCard = new Riskv1decisionsPaymentInformationCard();
 		paymentInformationCard.number("4444444444444448");
 		paymentInformationCard.expirationMonth("12");
-		paymentInformationCard.expirationYear("2020");
+		paymentInformationCard.expirationYear("2031");
 		paymentInformation.card(paymentInformationCard);
 
 		requestObj.paymentInformation(paymentInformation);
@@ -45,19 +45,19 @@ public class DMWithBuyerInformation {
 		Riskv1decisionsOrderInformation orderInformation = new Riskv1decisionsOrderInformation();
 		Riskv1decisionsOrderInformationAmountDetails orderInformationAmountDetails = new Riskv1decisionsOrderInformationAmountDetails();
 		orderInformationAmountDetails.currency("USD");
-		orderInformationAmountDetails.totalAmount("144.14");
+		orderInformationAmountDetails.totalAmount("11.21");
 		orderInformation.amountDetails(orderInformationAmountDetails);
 
 		Riskv1decisionsOrderInformationBillTo orderInformationBillTo = new Riskv1decisionsOrderInformationBillTo();
-		orderInformationBillTo.address1("96, powers street");
-		orderInformationBillTo.administrativeArea("NH");
+		orderInformationBillTo.address1("1 Market St");
+		orderInformationBillTo.administrativeArea("CA");
 		orderInformationBillTo.country("US");
-		orderInformationBillTo.locality("Clearwater milford");
-		orderInformationBillTo.firstName("James");
-		orderInformationBillTo.lastName("Smith");
-		orderInformationBillTo.phoneNumber("7606160717");
+		orderInformationBillTo.locality("san francisco");
+		orderInformationBillTo.firstName("Pancho");
+		orderInformationBillTo.lastName("Villa");
+		orderInformationBillTo.phoneNumber("4158880000");
 		orderInformationBillTo.email("assessment@reject.com.br");
-		orderInformationBillTo.postalCode("03055");
+		orderInformationBillTo.postalCode("94105");
 		orderInformation.billTo(orderInformationBillTo);
 
 		requestObj.orderInformation(orderInformation);
