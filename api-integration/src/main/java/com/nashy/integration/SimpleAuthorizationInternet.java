@@ -19,7 +19,7 @@ public class SimpleAuthorizationInternet {
 	private static String responseCode = null;
 	private static String status = null;
 	private static Properties merchantProp;
-	public static boolean userCapture = false; //no capture
+	public static boolean userCapture = true; //no capture
 	//public static boolean userCapture = true; //capture
 	
 	public static void main(String args[]) throws Exception {
@@ -72,7 +72,8 @@ public class SimpleAuthorizationInternet {
 		orderInformationBillTo.administrativeArea("CA");
 		orderInformationBillTo.postalCode("94105");
 		orderInformationBillTo.country("US");
-		orderInformationBillTo.email("assessment@reject.com.br");
+		//orderInformationBillTo.email("assessment@reject.com.br");
+		orderInformationBillTo.email("assessment@gmail.com");
 		orderInformationBillTo.phoneNumber("4158880000");
 		orderInformation.billTo(orderInformationBillTo);
 

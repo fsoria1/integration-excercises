@@ -54,7 +54,7 @@ public class TestRun {
 		 */
 		
 		//1. Add to fraud list
-		AddDataToList.run();
+		//AddDataToList.run();
 		
 		//Decision Manager
 		DMWithBuyerInformation.run();
